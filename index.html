@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pomoc Drogowa Barczewo</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap + FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    nav {
+      background-color: #1f1f1f;
+      padding: 15px 0;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #f5f5f5 !important;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ddd !important;
+      margin: 0 10px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffa726 !important;
+    }
+
+    .hero {
+      background-color: #2a2a2a;
+      color: white;
+      padding: 120px 0 100px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .pricing-card {
+      background: #2a2a2a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .pricing-card:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricing-card h4 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+
+    .pricing-card p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .btn-custom {
+      background-color: #ffa726;
+      color: #1f1f1f;
+      font-weight: 600;
+      border: none;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #fb8c00;
+      color: white;
+    }
+
+    .form-control {
+      border-radius: 4px;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .gallery .col-md-4 {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+</script>
+<body>
+
+  <!-- Nawigacja -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-truck"></i> Pomoc Drogowa
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#start">Start</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cennik">Cennik</a></li>
+          <li class="nav-item"><a class="nav-link" href="#onas">O nas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="start" class="hero">
+    <div class="container">
+      <h1>Profesjonalna pomoc drogowa 24/7</h1>
+      <p>Szybki dojazd – Nowoczesna flota – Zaufanie od lat</p>
+    </div>
+  </section>
+
+  <!-- Cennik -->
+  <section id="cennik" class="section">
+    <div class="container">
+      <h2 class="section-title">Cennik usług</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card">
+            <h4>Holowanie w mieście</h4>
+            <p>od 150 zł</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card">
+            <h4>Poza miastem</h4>
+            <p>od 2,50 zł/km</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card">
+            <h4>Transport z zagranicy</h4>
+            <p>Indywidualna wycena</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O nas -->
+  <section id="onas" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">O nas</h2>
+      <p class="text-center">
+        Zaufaj profesjonalistom z wieloletnim doświadczeniem. Jesteśmy dostępni 24 godziny na dobę, 7 dni w tygodniu.
+      </p>
+      <iframe src="https://www.google.com/maps?q=Wojska+Polskiego+27,+Barczewo&output=embed" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <h2 class="section-title">Galeria</h2>
+      <div class="row gallery">
+        <div class="col-md-4">
+          <a href="img/laweta1.jpg" class="glightbox" data-title="Laweta 1">
+            <img src="img/laweta1.jpg" alt="Laweta 1" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="img/laweta2.jpg" class="glightbox" data-title="Laweta 2">
+            <img src="img/laweta2.jpg" alt="Laweta 2" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="img/laweta3.jpg" class="glightbox" data-title="Laweta 3">
+            <img src="img/laweta3.jpg" alt="Laweta 3" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <!-- Kontakt -->
+  <section id="kontakt" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Zostaw numer – Oddzwonimy!</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+        <form method="POST" action="formularz.php">
+            <div class="mb-3">
+              <label for="phone" class="form-label">Numer telefonu</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required pattern="[0-9]{9}" placeholder="123456789">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Wiadomość (opcjonalnie)</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Np. laweta do Olsztyna, awaria w Barczewie..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">
+              <i class="fa-solid fa-phone"></i> Wyślij zgłoszenie
+            </button>
+          </form>
+          <p class="text-center mt-4">
+            📞 123 456 789 &nbsp; | &nbsp; ✉️ kontakt@pomoc-drogowa.pl
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pomoc Drogowa Barczewo. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+</body>
+</html>
